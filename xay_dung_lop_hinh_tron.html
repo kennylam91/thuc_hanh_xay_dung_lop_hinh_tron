@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lop hinh tron</title>
+</head>
+<body>
+<script>
+    function Circle(radius, color){
+        this.radius=radius;
+        this.color=color;
+        this.getRadius=function(){
+            return this.radius;
+        };
+        this.getArea=function(){
+            return this.radius*this.radius*Math.PI;
+        }
+    }
+    let circle1=new Circle(2,"black");
+    let radius=circle1.getRadius();
+    let color=circle1.color;
+    let area=circle1.getArea();
+    alert("radius= "+radius +" " + "area= "+area);
+</script>
+</body>
+</html>
